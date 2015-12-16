@@ -1,0 +1,65 @@
+<!--
+ Workshop 2.1 (extra)
+  Ejemplo básico de una caja de Twitter. Lleva un contador de caracteres y
+  deshabilita el botón de envío cuando se alcanza el límite.
+
+  Tiene (muchos) bugs, me encantaría ver tus mejoras y soluciones.
+  Puedes enviarlas como un Pull Request a este repositorio.
+
+  Si no entendiste lo último pero quieres ayudar, escríbeme.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter box</title>
+</head>
+<body>
+  <form id="tweet" novalidate>
+    <textarea class="tweet-box" placeholder="¿Qué está pasando?"></textarea>
+    <div class="tweet-characters">
+      <span class="tweet-characters-left"></span>
+    </div>
+    <div class="">
+      <button class="tweet" disabled>Twittear</button>
+    </div>
+  </form>
+  <script>
+  (function () {
+    'use strict';
+
+    var MAX_CHARS = 140;
+    var box = document.querySelector('.tweet-box');
+    var charactersLeft = document.querySelector('.tweet-characters-left');
+    var button = document.querySelector('.tweet');
+
+    var updateCharsLeft = function (len) {
+      charactersLeft.innerHTML = MAX_CHARS - len;
+    };
+
+    var updateButton = function (len) {
+      if (len < MAX_CHARS) {
+        button.disabled = false
+      }
+      else {
+        button.disabled = true;
+      }
+    };
+
+    box.addEventListener('keypress', function (ev) {
+      var len = this.value.length;
+      if (len > MAX_CHARS) {
+        ev.preventDefault();
+        return 0;
+      }
+
+      updateCharsLeft(len);
+      updateButton(len);
+    })
+
+    updateCharsLeft(0);
+
+  })()
+  </script>
+</body>
+</html>

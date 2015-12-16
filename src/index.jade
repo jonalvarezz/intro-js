@@ -37,9 +37,6 @@ html
         img(src="images/java-script-logo.jpg", alt="Logo Java")
         h3.text-color-gray Mocha, LiveScript, JavaScript
 
-      section(data-bespoke-backdrop='fbg-image this-is-js')
-        h3 THIS IS JavaScript
-
       section(data-bespoke-backdrop='bg-yellow-js')
         img(src="images/logo-js.jpg", alt="Logo JavaScript")
 
@@ -51,16 +48,465 @@ html
         h2 2009
         h3 ES5
 
-      section(data-bespoke-backdrop='fbg-image baia')
-        h2 2000 - 2009
-        h3 Baia baia
+      section(data-bespoke-backdrop='asphalt')
+        h2 2000 ? 2009
 
       section(data-bespoke-backdrop='fbg-image js-community')
         h2 Comunidad de JavaScript
         h3 2005 - 2009
 
+      section(data-bespoke-backdrop='fbg-image js-everywhere')
+        h3 JavaScript Everywhere
+      
+      section(data-bespoke-backdrop='fbg-image elmo-burn')
+        h3 Si quieres ver a Internet arder en llamas, desactiva JavaScript
+
+      section(data-bespoke-backdrop='bg-red')
+        h2 Always bet on JavaScript
+        h3 Brendan Eich
+
+      section(data-bespoke-backdrop='asphalt', data-bespoke-hash="cod")
+        h2 COD
+        h3 Código de conducta
+        ul
+          li Respeto (<em>harassment-free</em>)
+          li Tu pregunta es valiosa e importante
+          li Cero bullying
+          li Brazos sueltos y no cruzados
+
+      //- TODO: LA CONSOLA
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '5' + 3
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '5' + 3
+            // '53'
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '5' - 3
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '5' - 3
+            // 2
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '5' + + '5'
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '5' + + '5'
+            // '55'
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            'foo' + + 'foo'
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            'foo' + + 'foo'
+            // 'fooNaN'
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '5' + - + - - + - - + +
+             - + - + - - - '3'
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '5' + - + - - + - - + +
+             - + - + - - - '3'
+            // '53'
+
+      section(data-bespoke-backdrop='fbg-image confused-travolta')
+
+      section(data-bespoke-backdrop='asphalt')
+        h2 Punto y coma
+        h3 Excepto para for, function, if, switch, try and while
+
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-green Punto flotante
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            0.1 + 0.2
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            0.1 + 0.2
+            // 0.30000000000000004
+            // IEEE Standard for binary
+            // floating-point arithmetic
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            (0.1 + 0.2)*100
+            30/100
+            0.3
+
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow parseInt()
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            parseInt('43');
+            // 43
+
+            parseInt('43 Km')
+            // 43
+
+            parseInt(09)
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            parseInt(09)
+            // 0
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            parseInt(09, 10)
+            // 9
+      
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow Operadores de Igualdad
+        h3 == y !=
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '' == '0'
+            // false
+
+            0 == '0'
+            // true
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            false == 'false'
+            // false
+
+            false == '0'
+            // true
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '\t\r\n' == 0
+            // true
+
+      section(data-bespoke-backdrop='bg-white')
+        img(src="images/js-identity.png", alt="")
+
+      section(data-bespoke-backdrop='bg-white')
+        img(src="images/trow-out.png", alt="")
+      
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow Usar === y !==
+        h3 Siempre
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            '\t\r\n' === 0
+            // false
+      
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow NaN
+        h3 Not a Number
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            + '0';
+            // 0
+
+            + 'foo';
+            // NaN
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            NaN === NaN;
+            // false
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            isNaN(parseInt('hello 89'));
+            // true
+
+      section(data-bespoke-backdrop='bg-yellow')
+        h3.text-color-gray I could be a better programmer by using only
+          <br />the <strong>good parts</strong> and avoiding
+          <br />the <strong>bad parts</strong>
+
+      section(data-bespoke-backdrop='fbg-image two-peoples')
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // Quiero retornar un objeto
+            var color = function () {
+                return
+                {
+                    alpha: 90
+                }
+            }
+      
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow Definiendo variables
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            var foo = 4;
+
+            baz = 9;
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            var foo = 'my value';
+
+            var moo = function () {
+              foo = "Change global";
+            }
+            moo();
+            console.log(foo)
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // Declaración directa de variable global
+            window.foo = 'value';
+
+            // Global implícita
+            foo = 'value';
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // Forma correcta
+            var foo = 'value';
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // Cómo usar variables globales
+            var MYAPP = {};
+
+            MYAPP.author = {
+              name: 'Jonathan',
+              city: 'PEI'
+            };
+
+            MYAPP.skills = ['javascript', 'design', 'python'];
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // ES6 
+            let foo = 'value';
+            const moo = 'inmutable value';
+
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow Funciones
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // Statement
+            function foo() {
+              ...
+            }
+
+            // Expression
+            var foo = function () {
+              ...
+            }
+
+      section(data-bespoke-backdrop='bg-red')
+        h2 First-class Functions
+        h3 A function is an Object
+
+      section(data-bespoke-backdrop='fbg-image wat')
+        h3 Wat?
+
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow Scope y Módulos
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            var s = function () {
+                if (true) {
+                    var b = 10;
+                }
+                console.log(b);
+            }
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            var sc = function () {
+              var a = 3, b = 5;
+
+              var bar = function () {
+                var b = 7, c = 11;
+
+                a += b + c;
+              }
+
+              bar();
+
+              console.log(a, b);
+            }
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // let (ES6)
+            // Block scope
+            function bar() {
+              if (true) {
+                let foo = 'hello';
+              }
+
+              return foo;
+            };
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // const (ES6)
+            // Inmutable variables
+            const b = 'Hello BGA!';
+            b = 'Bye BGA!';
+
+            b; // 'Hello BGA'
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // Immediately-Invoked Function Expression
+            // IIFE
+            (function () {
+              // Own scope
+            })();
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // IIFE y variables globales
+            (function (author) {
+              // Own scope
+            })(MYAPP.author);
+
+      section(data-bespoke-backdrop='asphalt')
+        pre
+          code.language-javascript.
+            // Modulos
+            var mymodule = (function () {
+              ...
+              return {
+                api: api;
+              }
+            })();
+
+      section(data-bespoke-backdrop='asphalt', data-bespoke-hash="ws1")
+        h2.text-color-yellow Workshop 1
+        h3 Aprendiendo sobre funciones y callbacks
+
+      section(data-bespoke-backdrop='asphalt')
+        ol
+          li Crear una variable global con una propiedad data
+          li Definir una lista de objetos en la propiedad data
+          li Crear una funcion que retorne una nueva lista solo con los nombres.
+             <br />Hint: Usar for para recorrer el array
+          li Crear una funcion que retorne una nueva lista solo con las propiedades 'fullName' y 'city'
+          li Modular las funciones anteriores en una sola llamada map.
+            <br />Hint: map(array, modificador) retorna array
+            <br />Extra bonus: Agreguela dentro del prototipo de Array como myMap.
+
+      section(data-bespoke-backdrop='asphalt')
+        ol
+          li Crear una funcion que devuelva un objeto con la siguiente forma:
+            pre
+              code.language-javascript.
+                {'BGA': [{person}, {person}], 'PEI': [{person}, {person}] ...}
+            <br />Hint: hasOwnProperty
+          li Module las funciones anteriores en una sola llamada reduce.
+            <br />Hint: reduce(array, combinador, valor_inicial)
+            <br />Extra bonus: Agregar dentro del prototipo de Array como myReduce.
+
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow DOM
+        h3 Dom tree y Eventos
+
+      section(data-bespoke-backdrop='bg-red')
+        h2 ¿Realmente necesitamos
+          <br />jQuery?
+
+      section(data-bespoke-backdrop='fbg-image confused-travolta')
+
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow Workshop 2
+        h3 Consultando el DOM
+
+      section(data-bespoke-backdrop='asphalt')
+        ol
+          li Crear una lista HTML de por lo menos 10 elementos. La etiqueta que
+            <br />contiene lleva id 'list', y cada item clase 'item'
+          li Obtenga el elemento de ID ul#list
+          li Obtenga el primer item de la lista
+          li Obtenga el último item de la lista
+          li Obtenga el item número 14
+          li Elimine el item #7
+          li 6. Cree un nuevo elemento li con el texto 'Nuevo item' y
+            <br />agreguelo en la posición 7
+
+      section(data-bespoke-backdrop='asphalt')
+        ol
+          li Obtenga todos los elementos con la clase item
+          li Para cada uno de los items, agregue un evento click, de modo que al dar
+            <br />click sobre alguno de ellos se imprima en consola el valor de
+            <br />la posición al que pertenece
+          li Explique el comportamiento anterior
+          li Haga que funcione como debe ser
+
+
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow Node JS
+        h3 Una introducción
+
+      section(data-bespoke-backdrop='asphalt')
+        h2.text-color-yellow Workshop 5
+        h3 Node JS 
+
       section(data-bespoke-backdrop="fbg-image final")
         h2 Thank you
-        h3 <a href="https://twitter.com/jonalvarezz" target="_blank">Jonathan Álvarez</a>
+        h3 <a href="https://twitter.com/jonalvarezz" target="_blank">@jonalvarezz</a> - <a href="https://twitter.com/co_workinglabs" target="_blank">@co_workinglabs</a> 
 
     script(src='build/build.js')

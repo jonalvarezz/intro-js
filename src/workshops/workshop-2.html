@@ -1,0 +1,89 @@
+<!--
+ Workshop 2 #ws
+  Manipulando el DOm
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WorkShop 2</title>
+</head>
+<body>
+  <ul id="list">
+    <li class="item">Item #1</li>
+    <li class="item">Item #2</li>
+    <li class="item">Item #3</li>
+    <li class="item">Item #4</li>
+    <li class="item">Item #5</li>
+    <li class="item">Item #6</li>
+    <li class="item">Item #7</li>
+    <li class="item">Item #8</li>
+    <li class="item">Item #9</li>
+    <li class="item">Item #10</li>
+    <li class="item">Item #11</li>
+    <li class="item">Item #12</li>
+    <li class="item">Item #13</li>
+    <li class="item">Item #14</li>
+    <li class="item">Item #15</li>
+    <li class="item">Item #16</li>
+    <li class="item">Item #17</li>
+    <li class="item">Item #18</li>
+    <li class="item">Item #19</li>
+    <li class="item">Item #20</li>
+  </ul>
+  <script>
+  // 1. Obtenga el elemento de ID ul#list
+  var list = document.getElementById('list');
+
+  // 2. Obtenga el primer item de la lista
+  list.querySelector('li:first-child');
+
+  // 3. Obtenga el último item de la lista
+  list.querySelector('li:last-child');
+
+  // 4. Obtenga el item número 14
+  list.querySelector('li:nth-child(14)');
+
+  // 5. Elimine el item #7
+  var item7 = list.querySelector('li:nth-child(7)');
+  item7.parentElement.removeChild(item7);
+
+  // 6. Cree un nuevo elemento li con el texto 'Nuevo item' y agreguelo en la
+  // posición 7
+  var item7 = list.querySelector('li:nth-child(7)');
+  var newItem = document.createElement('li');
+  newItem.innerHTML = 'Nuevo item';
+  newItem.className = 'item';
+  item7.parentElement.insertBefore(newItem, item7);
+
+  // 7. Obtenga todos los elementos con la clase item
+  var items = document.querySelectorAll('.item');
+  console.log(items);
+
+  // 8. Para cada uno de los items, agregue un evento click, de modo que al dar
+  // click sobre alguno de ellos se imprima en consola el valor de la posición
+  // al que pertenece
+  // for (var i = 0; i < items.length; i++) {
+  //   var item = items[i];
+  //   item.addEventListener('click', function () {
+  //     console.log('Click en item #' + i)
+  //   });
+  // }
+
+  // 9. Explique el comportamiento anterior
+
+  // 10. Haga que funcione como debe ser
+  var handler = function (pos) {
+    return function () {
+      console.log('Click en item #' + pos);
+    }
+  }
+  for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    item.addEventListener('click', handler(i));
+  }
+
+
+  </script>
+</body>
+</html>
