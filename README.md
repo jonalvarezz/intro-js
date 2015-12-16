@@ -1,7 +1,9 @@
 # JavaScript Bucaramanga
-> Presentación para mi taller de JavaScript en Bucaramanga
+> Presentación para mi taller de JavaScript en Bucaramanga en el espacio de [@coworking-labs](https://twitter.com/co_workinglabs)
 
 **[View slides](http://jonalvarezz.github.io/bga-js/)**
+
+Los ejercicios o workshops los encuentran en la carpeta `src/workshops/`
 
 ## Ver los slides localmente
 
