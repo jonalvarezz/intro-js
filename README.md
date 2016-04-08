@@ -1,7 +1,7 @@
-# JavaScript Bucaramanga
-> Presentación para mi taller de JavaScript en Bucaramanga en el espacio de [@coworking-labs](https://twitter.com/co_workinglabs)
+# Introducción a JavaScript
+> Slides de mi charla sobre Introducción a JavaScript
 
-**[View slides](http://jonalvarezz.github.io/bga-js/)**
+**[Ver slides](http://jonalvarezz.github.io/intro-js/)**
 
 Los ejercicios o workshops los encuentran en la carpeta `src/workshops/`
 
@@ -21,5 +21,7 @@ $ gulp serve
 ```
 
 ## Créditos
+
+Esta presentación originalmente la hice en [bga-js](https://github.com/jonalvarezz/bga-js) y la migré a este otro repositorio para hacerla más general.
 
 Esta presentación fue hecha con [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) y construida con [generator-bespoke](https://github.com/markdalgleish/generator-bespoke).
