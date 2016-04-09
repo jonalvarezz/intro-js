@@ -1,4 +1,4 @@
-// Scripts trampa por si el live code no funciona. Que es lo más seguro
+// Scripts trampa por si el live code no funciona.
 
 // Return example
 var a = function () {
